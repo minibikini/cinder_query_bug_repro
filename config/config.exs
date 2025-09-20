@@ -44,7 +44,8 @@ config :spark,
 
 config :cinder_query_bug_repro,
   ecto_repos: [CinderQueryBugRepro.Repo],
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  ash_domains: [CinderQueryBugRepro.MyDomain]
 
 # Configures the endpoint
 config :cinder_query_bug_repro, CinderQueryBugReproWeb.Endpoint,
