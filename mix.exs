@@ -41,6 +41,7 @@ defmodule CinderQueryBugRepro.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:usage_rules, "~> 0.1", only: [:dev]},
       {:cinder, "~> 0.6"},
       {:sourceror, "~> 1.8", only: [:dev, :test]},
       {:ash_sqlite, "~> 0.2"},
